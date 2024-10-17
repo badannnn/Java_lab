@@ -1,0 +1,27 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <servlet>
+        <servlet-name>TaylorSeriesServlet</servlet-name>
+        <servlet-class>controller.TaylorSeriesServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>TabulationServlet</servlet-name>
+        <servlet-class>controller.TabulationServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TaylorSeriesServlet</servlet-name>
+        <url-pattern>/taylor</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>TabulationServlet</servlet-name>
+        <url-pattern>/tabulate</url-pattern>
+    </servlet-mapping>
+
+</web-app>
